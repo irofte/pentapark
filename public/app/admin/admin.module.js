@@ -1,17 +1,22 @@
-(function () {
+(function() {
+  'use strict';
+
   angular
-    .module('admin', [])
+    .module('pentapark.admin', [
+      'pentapark.admin.dashboard',
+      'pentapark.admin.users'
+    ])
     .config(configSetup);
 
   function configSetup($stateProvider) {
     $stateProvider
-    .state('admin',{
-        url:'/admin',
+      .state('admin', {
+        abstract: true,
+        url: '/admin',
         controller: 'AdminController',
         controllerAs: 'admin',
-        templateUrl:'public/app/admin/partials/admin.html'
-    })
+        templateUrl: 'partials/admin/partials/admin'
+      });
   }
-
 
 })();

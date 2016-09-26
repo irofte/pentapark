@@ -7,7 +7,7 @@
       'pentapark.account',
       'pentapark.shared',
       'pentapark.employee',
-      'admin'
+      'pentapark.admin'
     ])
     .config(configSetup)
     .run(runSetup);

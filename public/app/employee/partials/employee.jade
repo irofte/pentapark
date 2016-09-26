@@ -1,1 +1,1 @@
-div(ng-repeat="user in employee.users") {{ user.name }}
+div(ng-repeat="user in employee.users track by $index") {{ user.name }}
