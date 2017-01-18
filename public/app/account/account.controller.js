@@ -15,7 +15,7 @@
 
 
       function submit() {
-        var URL = 'http://localhost:3030/api/users';
+        var URL = 'http://localhost:3030/api/login';
 
         $http
           .post(URL, account.user)

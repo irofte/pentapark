@@ -1,4 +1,4 @@
-var accountController = require('./account/account.controller.js');
+var accountController = require('../account/account.controller.js');
 
 module.exports = function(app, config) {
   app.post('/api/login', function(req, res) {
